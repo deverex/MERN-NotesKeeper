@@ -50,31 +50,29 @@ const ContactForm = () => {
   };
   return (
     <form onSubmit={onSubmit}>
-      <h2 className="text-primary">
-        {current ? "Edit Contact" : "Add Contact"}
-      </h2>
+      <h2 className="text-primary">{current ? "Edit Note" : "Add Note"}</h2>
       <input
         type="text"
         name="name"
-        placeholder="Name"
+        placeholder="Title"
         value={name}
         onChange={onChange}
       />
-      <input
-        type="email"
+      <textarea
+        type="text"
         name="email"
-        placeholder="Email"
+        placeholder="Description"
         value={email}
         onChange={onChange}
       />
-      <input
+      {/* <input
         type="text"
         name="phone"
         placeholder="Phone"
         value={phone}
         onChange={onChange}
-      />
-      <h5>Contact Type</h5>
+      /> */}
+      <h5>Note Type</h5>
       <input
         type="radio"
         name="type"
@@ -94,7 +92,7 @@ const ContactForm = () => {
       <div>
         <input
           type="submit"
-          value={current ? "Update Contact" : "Add Contact"}
+          value={current ? "Update Note" : "Add Note"}
           className="btn btn-primary btn-block"
         />
       </div>

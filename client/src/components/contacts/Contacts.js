@@ -14,7 +14,7 @@ const Contacts = () => {
   }, []);
 
   if (contacts !== null && contacts.length === 0 && !loading) {
-    return <h4>Please add a contact</h4>;
+    return <h4>Please add a Note</h4>;
   }
   return (
     <Fragment>

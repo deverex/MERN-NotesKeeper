@@ -103,6 +103,7 @@ img {
 }
 
 .list li {
+  word-break: break-all;
   padding-bottom: 0.3rem;
 }
 
@@ -294,7 +295,8 @@ img {
 }
 
 /* Forms */
-input {
+input,
+textarea {
   margin: 1.2rem 0;
 }
 
